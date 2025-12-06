@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programação • 25 Anos</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: linear-gradient(160deg, #0d0d0d, #1a1a1a);
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px 14px 60px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* TÍTULO */
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg,#bdbdbd,#f5f5f5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.sub {
+    text-align: center;
+    font-size: 14px;
+    color: #bcbcbc;
+    margin-bottom: 40px;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    border-left: 3px solid rgba(255,255,255,.15);
+    padding-left: 25px;
+}
+
+/* EVENTO */
+.event {
+    position: relative;
+    background: rgba(255,255,255,.05);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 22px rgba(255,255,255,.08);
+}
+
+/* MARCADOR */
+.event::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 22px;
+    width: 14px;
+    height: 14px;
+    background: #dcdcdc;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255,255,255,.4);
+}
+
+/* HORA */
+.time {
+    font-weight: 600;
+    font-size: 15px;
+    color: #f0f0f0;
+}
+
+/* TÍTULO EVENTO */
+.title {
+    font-size: 17px;
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+/* DESTAQUES */
+.opening {
+    border-left: 6px solid #bdbdbd;
+}
+.closing {
+    border-left: 6px solid #9e9e9e;
+}
+
+/* BOTÃO VOLTAR */
+.back {
+    margin-top: 40px;
+    text-align: center;
+}
+.back button {
+    padding: 12px 32px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    background: linear-gradient(145deg,#eaeaea,#9c9c9c);
+    color: #111;
+    box-shadow: 0 0 14px rgba(255,255,255,.35);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    h1 { font-size: 34px; }
+
+    .title { font-size: 16px; }
+
+    .event {
+        padding: 16px 18px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .event::before {
+        left: -30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Programação do Evento</h1>
+    <div class="sub">Festa da Família • 25 anos da Escola Traços & Letras</div>
+
+    <div class="timeline">
+
+        <div class="event opening">
+            <div class="time">19h30</div>
+            <div class="title">Fala da Gestão / Direção Escolar</div>
+        </div>
+
+        <div class="event">
+            <div class="time">19h45</div>
+            <div class="title">Maternal e Grupo I – A Alegria do Circo</div>
+        </div>
+
+        <div class="event">
+            <div class="time">20h00</div>
+            <div class="title">Grupo II – Celebrar a Vida e Protegê-la</div>
+        </div>
+
+        <div class="event">
+            <div class="time">20h15</div>
+            <div class="title">Grupo III – Contos Infantis</div>
+        </div>
+
+        <div class="event">
+            <div class="time">20h30</div>
+            <div class="title">1º e 2º Ano – Lição de Natal</div>
+        </div>
+
+        <div class="event">
+            <div class="time">20h50</div>
+            <div class="title">3º e 4º Ano – O Brasil Canta, Dança e Encanta!</div>
+        </div>
+
+        <div class="event">
+            <div class="time">21h10</div>
+            <div class="title">5º Ano – Brasil de Muitas Vozes</div>
+        </div>
+
+        <div class="event">
+            <div class="time">21h30</div>
+            <div class="title">9º Ano A – Revivendo a Infância no Sítio do Picapau Amarelo</div>
+        </div>
+
+        <div class="event">
+            <div class="time">22h00</div>
+            <div class="title">Homenagens • Sorteio da Cesta Natalina • Banda</div>
+        </div>
+
+        <div class="event closing">
+            <div class="time">23h00</div>
+            <div class="title">Encerramento</div>
+        </div>
+
+    </div>
+
+    <div class="back">
+        <a href="index.html">
+            <button>⬅ Voltar para a Galeria</button>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
